@@ -28,82 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblWord = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.lblGussed = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label1 = new Label();
+            lblWord = new Label();
+            textBox1 = new TextBox();
+            lblInfo = new Label();
+            lblGussed = new Label();
+            RandomButton = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(240, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Guess The Word";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 26.25F);
+            label1.Location = new Point(240, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(274, 47);
+            label1.TabIndex = 0;
+            label1.Text = "Guess The Word";
             // 
             // lblWord
             // 
-            this.lblWord.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWord.ForeColor = System.Drawing.Color.White;
-            this.lblWord.Location = new System.Drawing.Point(240, 118);
-            this.lblWord.Name = "lblWord";
-            this.lblWord.Size = new System.Drawing.Size(274, 52);
-            this.lblWord.TabIndex = 1;
-            this.lblWord.Text = "label2";
-            this.lblWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblWord.Font = new Font("Segoe UI", 21.75F);
+            lblWord.ForeColor = Color.White;
+            lblWord.Location = new Point(240, 118);
+            lblWord.Name = "lblWord";
+            lblWord.Size = new Size(274, 52);
+            lblWord.TabIndex = 1;
+            lblWord.Text = "label2";
+            lblWord.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(259, 204);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 46);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyIsPressed);
+            textBox1.Font = new Font("Segoe UI", 21.75F);
+            textBox1.Location = new Point(259, 204);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(255, 46);
+            textBox1.TabIndex = 2;
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.KeyPress += KeyIsPressed;
             // 
             // lblInfo
             // 
-            this.lblInfo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblInfo.Location = new System.Drawing.Point(240, 280);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(274, 52);
-            this.lblInfo.TabIndex = 1;
-            this.lblInfo.Text = "Words: 0 of 0";
-            this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblInfo.Font = new Font("Segoe UI", 18F);
+            lblInfo.ForeColor = Color.FromArgb(192, 255, 255);
+            lblInfo.Location = new Point(240, 280);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new Size(274, 52);
+            lblInfo.TabIndex = 1;
+            lblInfo.Text = "Words: 0 of 0";
+            lblInfo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGussed
             // 
-            this.lblGussed.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGussed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblGussed.Location = new System.Drawing.Point(520, 203);
-            this.lblGussed.Name = "lblGussed";
-            this.lblGussed.Size = new System.Drawing.Size(274, 47);
-            this.lblGussed.TabIndex = 1;
-            this.lblGussed.Text = "Guessed: 0 times";
-            this.lblGussed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblGussed.Font = new Font("Segoe UI", 18F);
+            lblGussed.ForeColor = Color.FromArgb(255, 255, 192);
+            lblGussed.Location = new Point(520, 203);
+            lblGussed.Name = "lblGussed";
+            lblGussed.Size = new Size(274, 47);
+            lblGussed.TabIndex = 1;
+            lblGussed.Text = "Guessed: 0 times";
+            lblGussed.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // RandomButton
+            // 
+            RandomButton.Location = new Point(340, 335);
+            RandomButton.Name = "RandomButton";
+            RandomButton.Size = new Size(75, 23);
+            RandomButton.TabIndex = 3;
+            RandomButton.Text = "Radomizar";
+            RandomButton.UseVisualStyleBackColor = true;
+            RandomButton.Click += RandomButton_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblGussed);
-            this.Controls.Add(this.lblInfo);
-            this.Controls.Add(this.lblWord);
-            this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Name = "Form1";
-            this.Text = "Guess The Word Game MOO ICT";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DimGray;
+            ClientSize = new Size(800, 450);
+            Controls.Add(RandomButton);
+            Controls.Add(textBox1);
+            Controls.Add(lblGussed);
+            Controls.Add(lblInfo);
+            Controls.Add(lblWord);
+            Controls.Add(label1);
+            ForeColor = Color.FromArgb(192, 192, 255);
+            Name = "Form1";
+            Text = "Guess The Word Game MOO ICT";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -114,5 +126,6 @@
         private TextBox textBox1;
         private Label lblInfo;
         private Label lblGussed;
+        private Button RandomButton;
     }
 }
