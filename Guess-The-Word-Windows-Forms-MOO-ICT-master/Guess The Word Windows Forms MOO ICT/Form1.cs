@@ -10,8 +10,8 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
         string newText;
         int i = 0;
         int guessed = 0;
-        int qtde = 10;
-        int click = 0;
+        int qtde = 5;
+        int use = 2;
 
 
         public Form1()
@@ -26,7 +26,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
             {
                 if (words[i].ToLower() == textBox1.Text.ToLower())
                 {
-                    if (i < qtde)
+                    if (i < qtde-1)
                     {
                         MessageBox.Show("Correct!", "Moo Says: ");
                         textBox1.Text = "";
@@ -42,12 +42,17 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                         lblWord.Text = "You Win, Well done";
                         return;
                     }
-                    click = 0;
+                    use = 2;
                 }
                 else
                 {
                     guessed += 1;
                     lblGussed.Text = "Guessed: " + guessed + " times.";
+                    if (guessed >= (2 * qtde))
+                    {
+                        lblWord.Text = "You Lose, Try Again";
+                        textBox1.Enabled = false;
+                    }
                 }
                 e.Handled = true;
             }
@@ -69,11 +74,15 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
 
         private void RandomButton_Click(object sender, EventArgs e)
         {
-            if(click == 0)
+            if(use > 0)
             {
                 newText = Scramble(words[i]);
                 lblWord.Text = newText;
-                click = 1;
+                use--;
+            }
+            else if(textBox1.Enabled == true && use == 0)
+            {
+                MessageBox.Show($"Você tem {use} randoms restantes!", "Moo Says: ");
             }
         }
     }
