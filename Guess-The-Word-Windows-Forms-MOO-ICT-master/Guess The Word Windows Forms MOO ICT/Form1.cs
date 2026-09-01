@@ -26,7 +26,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
             {
                 if (words[i].ToLower() == textBox1.Text.ToLower())
                 {
-                    if (i < qtde-1)
+                    if (i < qtde)
                     {
                         MessageBox.Show("Correct!", "Moo Says: ");
                         textBox1.Text = "";
@@ -50,8 +50,8 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                     lblGussed.Text = "Guessed: " + guessed + " times.";
                     if (guessed >= (2 * qtde))
                     {
-                        lblWord.Text = "You Lose, Try Again";
-                        textBox1.Enabled = false;
+                        MessageBox.Show("You Lose, Try Again", "Moo Says: ");
+                        Application.Exit();
                     }
                 }
                 e.Handled = true;
@@ -80,9 +80,9 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                 lblWord.Text = newText;
                 use--;
             }
-            else if(textBox1.Enabled == true && use == 0)
+            else
             {
-                MessageBox.Show($"Você tem {use} randoms restantes!", "Moo Says: ");
+                MessageBox.Show("Você não tem mais randoms disponíveis para esta palavra!", "Moo Says: ");
             }
         }
     }
