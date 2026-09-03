@@ -1,18 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using System.IO;
+using System.Media;
+
 namespace Guess_The_Word_Windows_Forms_MOO_ICT
 {
-
     // Made by MOO ICT
     // For educational purpose only
     public partial class Form1 : Form
     {
-
         List<string> words = new List<string>();
         string newText;
         int i = 0;
         int guessed = 0;
         int qtde = 5;
         int use = 2;
-
 
         public Form1()
         {
@@ -24,36 +28,66 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
+                // ==========================================
+                // SE ACERTOU A PALAVRA
+                // ==========================================
                 if (words[i].ToLower() == textBox1.Text.ToLower())
                 {
+                    // 1. Toca o som de Acerto
+                    string caminhoSomAcerto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "som-acerto.wav");
+                    SoundPlayer somAcerto = new SoundPlayer(caminhoSomAcerto);
+                    somAcerto.Play();
+
+                    MessageBox.Show("Correct!", "Moo Says: ");
+                    textBox1.Text = "";
+                    
+                    i += 1; // Incrementa a quantidade de acertos
+
+                    // Verifica se ainda tem palavras para jogar
                     if (i < qtde)
                     {
-                        MessageBox.Show("Correct!", "Moo Says: ");
-                        textBox1.Text = "";
-                        i += 1;
                         newText = Scramble(words[i]);
                         lblWord.Text = newText;
                         lblInfo.Text = "Words: " + (i + 1) + " of " + qtde;
                         guessed = 0;
                         lblGussed.Text = "Guessed: " + guessed + " times.";
                     }
+                    // Se não tem mais palavras, venceu o jogo!
                     else
                     {
+                        // 2. Toca o som de Aura (Vitória)
+                        string caminho15Acerto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "som-aura.wav");
+                        SoundPlayer somAura = new SoundPlayer(caminho15Acerto);
+                        somAura.Play();
+
                         lblWord.Text = "You Win, Well done";
-                        return;
+                        e.Handled = true;
+                        return; // Para a execução aqui
                     }
-                    use = 2;
+                    
+                    use = 2; // Reseta os usos do random para a próxima palavra
                 }
+                // ==========================================
+                // SE ERROU A PALAVRA
+                // ==========================================
                 else
                 {
+                    // 3. Toca o som de Erro
+                    string caminhoSomErro = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "som-erro.wav");
+                    SoundPlayer somErro = new SoundPlayer(caminhoSomErro);
+                    somErro.Play();
+
                     guessed += 1;
                     lblGussed.Text = "Guessed: " + guessed + " times.";
+                    
+                    // Limite de erros atingido
                     if (guessed >= (2 * qtde))
                     {
                         MessageBox.Show("You Lose, Try Again", "Moo Says: ");
                         Application.Exit();
                     }
                 }
+                
                 e.Handled = true;
             }
         }
@@ -74,7 +108,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
 
         private void RandomButton_Click(object sender, EventArgs e)
         {
-            if(use > 0)
+            if (use > 0)
             {
                 newText = Scramble(words[i]);
                 lblWord.Text = newText;
