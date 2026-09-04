@@ -34,6 +34,7 @@
             lblInfo = new Label();
             lblGussed = new Label();
             RandomButton = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -91,13 +92,22 @@
             // 
             // RandomButton
             // 
-            RandomButton.Location = new Point(340, 335);
+            RandomButton.Location = new Point(310, 335);
             RandomButton.Name = "RandomButton";
-            RandomButton.Size = new Size(75, 23);
+            RandomButton.Size = new Size(136, 23);
             RandomButton.TabIndex = 3;
             RandomButton.Text = "Radomizar";
             RandomButton.UseVisualStyleBackColor = true;
             RandomButton.Click += RandomButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(333, 379);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 4;
+            label2.Text = "label2";
             // 
             // Form1
             // 
@@ -105,6 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(RandomButton);
             Controls.Add(textBox1);
             Controls.Add(lblGussed);
@@ -127,5 +138,6 @@
         private Label lblInfo;
         private Label lblGussed;
         private Button RandomButton;
+        private Label label2;
     }
 }

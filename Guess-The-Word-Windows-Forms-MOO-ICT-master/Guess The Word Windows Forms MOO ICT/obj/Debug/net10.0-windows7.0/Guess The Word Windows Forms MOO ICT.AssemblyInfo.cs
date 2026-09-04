@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Guess The Word Windows Forms MOO ICT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23b631158f80ca8c5affcaff334a5d35132af5d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+616a40f01fbee94d2cb7cf5280bc25ed9966f708")]
 [assembly: System.Reflection.AssemblyProductAttribute("Guess The Word Windows Forms MOO ICT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Guess The Word Windows Forms MOO ICT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,7 +16,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
         int i = 0;
         int guessed = 0;
         int qtde = 5;
-        int use = 2;
+        int use = 4;
 
         public Form1()
         {
@@ -40,7 +40,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
 
                     MessageBox.Show("Correct!", "Moo Says: ");
                     textBox1.Text = "";
-                    
+
                     i += 1; // Incrementa a quantidade de acertos
 
                     // Verifica se ainda tem palavras para jogar
@@ -64,8 +64,9 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                         e.Handled = true;
                         return; // Para a execução aqui
                     }
-                    
-                    use = 2; // Reseta os usos do random para a próxima palavra
+
+                    use = 4; // Reseta os usos do random para a próxima palavra
+                    label2.Text = $"Total de usos: {use}";
                 }
                 // ==========================================
                 // SE ERROU A PALAVRA
@@ -79,7 +80,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
 
                     guessed += 1;
                     lblGussed.Text = "Guessed: " + guessed + " times.";
-                    
+
                     // Limite de erros atingido
                     if (guessed >= (2 * qtde))
                     {
@@ -87,7 +88,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                         Application.Exit();
                     }
                 }
-                
+
                 e.Handled = true;
             }
         }
@@ -99,6 +100,7 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
             newText = Scramble(words[i]);
             lblWord.Text = newText;
             lblInfo.Text = "Words: " + (i + 1) + " of " + qtde;
+            label2.Text = $"Total de usos: {use}";
         }
 
         private string Scramble(string text)
@@ -113,11 +115,13 @@ namespace Guess_The_Word_Windows_Forms_MOO_ICT
                 newText = Scramble(words[i]);
                 lblWord.Text = newText;
                 use--;
+                label2.Text = $"Total de usos: {use}";
             }
             else
             {
                 MessageBox.Show("Você não tem mais randoms disponíveis para esta palavra!", "Moo Says: ");
             }
         }
+
     }
 }

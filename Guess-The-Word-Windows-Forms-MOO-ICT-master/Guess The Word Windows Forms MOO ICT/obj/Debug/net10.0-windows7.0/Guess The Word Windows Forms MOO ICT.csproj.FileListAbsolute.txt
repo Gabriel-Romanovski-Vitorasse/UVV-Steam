@@ -48,3 +48,24 @@ C:\Users\ADM\Documents\GitHub\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-mas
 C:\Users\ADM\Documents\GitHub\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.genruntimeconfig.cache
 C:\Users\ADM\Documents\GitHub\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\ref\Guess The Word Windows Forms MOO ICT.dll
 C:\Users\ADM\Documents\GitHub\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess Th.9B065D6B.Up2Date
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.exe
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.deps.json
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.runtimeconfig.json
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.dll
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.pdb
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess_The_Word_Windows_Forms_MOO_ICT.Form1.resources
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.csproj.GenerateResource.cache
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.AssemblyInfoInputs.cache
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.AssemblyInfo.cs
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.csproj.CoreCompileInputs.cache
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.sourcelink.json
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.dll
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\refint\Guess The Word Windows Forms MOO ICT.dll
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.pdb
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\Guess The Word Windows Forms MOO ICT.genruntimeconfig.cache
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\obj\Debug\net10.0-windows7.0\ref\Guess The Word Windows Forms MOO ICT.dll
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\som-acerto.wav
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\som-aura.wav
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\som-erro.wav
+C:\Users\alunolab11\source\repos\UVV-Steam\Guess-The-Word-Windows-Forms-MOO-ICT-master\Guess The Word Windows Forms MOO ICT\bin\Debug\net10.0-windows7.0\words.txt
